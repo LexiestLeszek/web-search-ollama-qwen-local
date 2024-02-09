@@ -31,7 +31,6 @@ def get_context(question):
 
     return context
 
-# Function to generate output using the LLM model
 def generate_output(question,context):
     # Prepare the prompt with the input text
     # Define a prompt template
