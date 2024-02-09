@@ -6,12 +6,6 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 
-'''
-def get_context():
-    context = "Elon Actually tried the tastiest pizza yesterday"
-    return context
-'''
-
 def get_context(question):
     search_results = search(question, num=3, stop=3, pause=2)
     top_links = list(search_results)
